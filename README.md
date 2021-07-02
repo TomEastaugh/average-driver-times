@@ -7,7 +7,7 @@ and writes them to a local file.
 To run all the test execute the following command `sbt test`
 
 ## Improvements
-As I have treated this app as task that should not be overly complicated.
+As I have treated this app as a task that should not be overly complicated.
 Below is a list of improvement I would implement if the task required.   
 
 - Return a list of all errors when trying to extract LapTimes from CSV lines.
