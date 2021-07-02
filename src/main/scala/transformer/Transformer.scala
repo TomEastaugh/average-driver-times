@@ -11,6 +11,6 @@ object Transformer {
         DriverLapTimes(driverName, averageTime, times.min)
     }.toList
 
-      avgDriverTimes.sortBy(dt => (dt.averageTime, dt.minTime)).take(3)
+    avgDriverTimes.sortBy(dt => (dt.averageTime, dt.minTime)).take(3)
   }
 }

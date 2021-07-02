@@ -2,7 +2,7 @@ import scala.io.{BufferedSource, Source}
 
 import com.typesafe.scalalogging.StrictLogging
 import extractor.Extractor
-import io.CsvWriter
+import io.csv.CsvWriter
 import transformer.Transformer
 
 object Processor extends App with StrictLogging {
@@ -16,6 +16,5 @@ object Processor extends App with StrictLogging {
 
     case Left(errors) => logger.error(errors)
   }
-
   source.close()
 }

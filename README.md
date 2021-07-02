@@ -7,6 +7,8 @@ and writes them to a local file.
 To run all the test execute the following command `sbt test`
 
 ## Improvements
+- Add config to remove "magic" values
 - Return a list of all errors when trying to extract LapTimes from the CSV.
+- Validate incoming csv has the correct number of columns
 - Validate incoming driver times to ensure they are valid decimals.
 - Round the average time produced in the output file.
