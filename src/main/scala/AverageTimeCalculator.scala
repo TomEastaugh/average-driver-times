@@ -6,7 +6,7 @@ import extractor.Extractor
 import io.csv.CsvWriter
 import transformer.Transformer
 
-object Processor extends App with StrictLogging {
+object AverageTimeCalculator extends App with StrictLogging {
 
   val cfg = Config()
 

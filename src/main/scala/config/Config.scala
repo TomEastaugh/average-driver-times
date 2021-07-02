@@ -1,6 +1,5 @@
 package config
 
-import com.typesafe.config.ConfigFactory.load
 import com.typesafe.config.{ConfigFactory, Config => TConfig}
 
 class Config(cfg: TConfig) {
