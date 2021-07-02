@@ -9,6 +9,8 @@ class CsvWriterSpec extends FlatSpec with Matchers {
 
   behavior of "CsvWriter"
 
+  val outputFileName = "testing-average-driver-times.csv"
+
   it should "correctly write average driven times given a valid list of DriverLapTimes" in {
 
     val input = List(
@@ -23,9 +25,9 @@ class CsvWriterSpec extends FlatSpec with Matchers {
       "Charlie,5.77"
     )
 
-    CsvWriter.writeAverageTimes(input)
+    CsvWriter.writeAverageTimes(input, outputFileName)
 
-    Source.fromFile(CsvWriter.fileName).getLines.toList should contain theSameElementsAs expected
+    Source.fromFile(outputFileName).getLines.toList should contain theSameElementsAs expected
 
   }
 }
